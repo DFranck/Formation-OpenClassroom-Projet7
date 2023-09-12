@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* .visually-hidden {
+  visibility: hidden;
+}
+
+@font-face {
+  font-family: "Anton";
+  src: url("../assets/fonts/Anton-Regular.ttf");
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/Manrope-VariableFont_wght.ttf");
+}
+header {
+  background: url(../../assets/img/header.png) center/cover;
+  position: relative;
+  height: 667px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header h1 {
+  position: absolute;
+  top: 51px;
+  left: 69px;
+}
+header h2 {
+  color: #ffd15b;
+  font-family: "Anton", sans-serif;
+  font-size: 44px;
+  font-weight: 400;
+  max-width: 890px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+header #searchBar {
+  position: relative;
+}
+header #searchBar input {
+  width: 954px;
+  height: 72px;
+  border-radius: 11px;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+  color: #7a7a7a;
+  padding-left: 30px;
+  border: none;
+}
+header #searchBar #loop-cta {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}/*# sourceMappingURL=index.css.map */

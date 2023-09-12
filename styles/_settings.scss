@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .visually-hidden{
+        visibility: hidden;
+    }
+}
+
+@font-face {
+    font-family: "Anton";
+    src: url("../assets/fonts/Anton-Regular.ttf");
+}
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope-VariableFont_wght.ttf');
+}
+$Font1 : "Anton", sans-serif;
+$Font2 :"Manrope", sans-serif;
+$Yellow : #ffd15b;
+$Black: #1b1b1b;
+$Grey: #7a7a7a;
+$LightGrey: #c6c6c6;
+
+@mixin FlexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

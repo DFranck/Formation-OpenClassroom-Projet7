@@ -23,6 +23,7 @@ header{
         #searchBar{
             position: relative;
             input{
+                cursor: pointer;
                 width: 954px;
                 height: 72px;
                 border-radius: 11px;
@@ -31,11 +32,35 @@ header{
                 color: set.$Grey;
                 padding-left: 30px;
                 border: none;
+                outline: none;
+            }
+            #canceled-search{
+                position: absolute;
+                background: none;
+                border: none;
+                right: 90px;
+                top: 30px;
+                opacity: 0;
             }
             #loop-cta{
+                cursor: pointer;
                 position: absolute;
                 top: 10px;
                 right: 10px;
+                &:hover{
+                    #loop-cta-default{
+                        opacity: 0;
+                    }
+                }
+                #loop-cta-default{
+                    position: absolute;
+                    right: 0;
+                    transition: .5s;
+                }
+                #loop-cta-hover{
+                    position: absolute;
+                    right: 0;
+                }
             }
         }
     

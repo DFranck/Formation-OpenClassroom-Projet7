@@ -17,7 +17,7 @@
     <header>
       <h1 id="logo">
         <figure>
-          <img src="../../assets/img/Logo.svg" alt="Logo" />
+          <img src="../../assets/icons/Logo.svg" alt="Logo" />
           <figcaption class="visually-hidden">
             Nom du site / Titre principal
           </figcaption>
@@ -31,14 +31,40 @@
           type="text"
           placeholder="Rechercher une recette, un ingrédient, ..."
         />
-        <div id="loop-cta">
-          <img src="./assets/img/Property 1=Default.svg" alt="" />
-        </div>
+        <button id="canceled-search">
+          <img src="./assets/icons/Vector.svg" alt="croix" />
+        </button>
+        <button id="loop-cta">
+          <img
+            src="./assets/icons/Property 1=Variant2.svg"
+            alt="bouton rechercher survolé"
+            id="loop-cta-hover"
+          />
+          <img
+            src="./assets/icons/Property 1=Default.svg"
+            alt="bouton rechercher par default"
+            id="loop-cta-default"
+          />
+        </button>
       </div>
     </header>
     <main>
       <section class="filter">
-        <div class="select-filter">ICI AJOUT DE COMPONENTS FILTER</div>
+        <div class="recipe-number"><p>1500 recettes</p></div>
+        <div class="select-filter">
+          <div id="ingredients">
+            <button>Ingrédients</button>
+            <input type="text" />
+          </div>
+          <div id="devices">
+            <button>Appareils</button>
+            <input type="text" />
+          </div>
+          <div id="utensils">
+            <button>Ustensiles</button>
+            <input type="text" />
+          </div>
+        </div>
         <div class="filter-selected">ICI AJOUT DES FILTRE UTILISE</div>
       </section>
       <section class="recipe-gallery">ICI LES CARTES RECETTE FILTREE</section>

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 * .visually-hidden {
   visibility: hidden;
@@ -79,4 +80,208 @@ header #searchBar #loop-cta #loop-cta-default {
 header #searchBar #loop-cta #loop-cta-hover {
   position: absolute;
   right: 0;
+}
+
+.filter .filter-header {
+  display: flex;
+  justify-content: space-between;
+  height: 63px;
+  margin-bottom: 20px;
+}
+.filter .filter-header .custom-selects {
+  position: relative;
+  display: flex;
+  gap: 63px;
+}
+.filter .filter-header .custom-selects .custom-select {
+  position: relative;
+  background: #ffffff;
+  border-radius: 11px;
+  width: 195px;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 315px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: start;
+}
+.filter .filter-header .custom-selects .custom-select .custom-select-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.filter .filter-header .custom-selects .custom-select .custom-select-header button {
+  position: relative;
+  padding: 15px;
+  background: none;
+  border: none;
+  width: 100%;
+  height: 63px;
+  text-align: left;
+  cursor: pointer;
+}
+.filter .filter-header .custom-selects .custom-select .custom-select-header button img {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.filter .filter-header .custom-selects .custom-select .custom-select-header button .chevron-up {
+  opacity: 0;
+}
+.filter .filter-header .custom-selects .custom-select .custom-select-header input {
+  margin: 15px;
+  margin-top: -6px;
+  border-radius: 2px;
+  border: 1px solid #c6c6c6;
+  height: 36px;
+  outline: none;
+  padding-left: 8px;
+  color: #7a7a7a;
+  display: none;
+}
+.filter .filter-header .custom-selects .custom-select .custom-select-header .loop-select {
+  position: absolute;
+  top: 68px;
+  left: 154px;
+  display: none;
+}
+.filter .filter-header .custom-selects .custom-select .custom-select-header .cross-select {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 72px;
+  left: 138px;
+  display: none;
+}
+.filter .filter-header .custom-selects .custom-select ul {
+  z-index: 1;
+  background: #ffffff;
+  border-radius: 0 0 11px 11px;
+  width: 100%;
+  overflow: auto;
+  scrollbar-width: none;
+  display: none;
+}
+.filter .filter-header .custom-selects .custom-select ul::-webkit-scrollbar {
+  display: none;
+}
+.filter .filter-header .custom-selects .custom-select ul :hover {
+  background: #ffd15b;
+}
+.filter .filter-header .custom-selects .custom-select ul li {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  height: 37px;
+  width: 100%;
+  cursor: pointer;
+}
+.filter .filter-header .recipe-number {
+  margin-top: 15px;
+  font-family: "Anton", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+}
+.filter .filter-selected button {
+  background: #ffd15b;
+  height: 53px;
+  border: none;
+  border-radius: 10px;
+  padding: 17px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.recipes-gallery {
+  max-width: 1440px;
+  margin-top: 40px;
+}
+.recipes-gallery .recipes-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.recipes-gallery .recipes-list .recipe-container {
+  position: relative;
+  width: 380px;
+  height: 731px;
+  border-radius: 21px;
+  background: #ffffff;
+}
+.recipes-gallery .recipes-list .recipe-container img {
+  width: 100%;
+  height: 253px;
+  border-radius: 21px 21px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.recipes-gallery .recipes-list .recipe-container span {
+  position: absolute;
+  top: 21px;
+  left: 295px;
+  background: #ffd15b;
+  border-radius: 14px;
+  padding: 5px 15px;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+}
+.recipes-gallery .recipes-list .recipe-container .recipe-content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.recipes-gallery .recipes-list .recipe-container .recipe-content h4 {
+  font-family: "Anton", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.recipes-gallery .recipes-list .recipe-container .recipe-content h5 {
+  margin-top: 32px;
+  margin-bottom: 15px;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #7a7a7a;
+}
+.recipes-gallery .recipes-list .recipe-container .recipe-content p {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+}
+.recipes-gallery .recipes-list .recipe-container .recipe-content .ingredients {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+}
+.recipes-gallery .recipes-list .recipe-container .recipe-content .ingredients h6 {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.recipes-gallery .recipes-list .recipe-container .recipe-content .ingredients p {
+  color: #7a7a7a;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+main {
+  background: #EDEDED;
+  padding: 20px 80px;
+}
+main h3, main li, main input {
+  font-family: "Manrope", sans-serif;
+}
+main h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+main li, main input {
+  font-size: 14px;
 }/*# sourceMappingURL=index.css.map */

@@ -32,7 +32,7 @@
           placeholder="Rechercher une recette, un ingrédient, ..."
         />
         <button id="canceled-search">
-          <img src="./assets/icons/Vector.svg" alt="croix" />
+          <img src="./assets/icons/cross.svg" alt="croix" />
         </button>
         <button id="loop-cta">
           <img
@@ -50,24 +50,248 @@
     </header>
     <main>
       <section class="filter">
-        <div class="recipe-number"><p>1500 recettes</p></div>
-        <div class="select-filter">
-          <div id="ingredients">
-            <button>Ingrédients</button>
-            <input type="text" />
+        <div class="filter-header">
+          <div class="custom-selects">
+            <div class="custom-select" id="ingredients">
+              <div class="custom-select-header">
+                <button>
+                  Ingrédients
+                  <img
+                    class="chevron-down"
+                    src="./assets/icons/chevron down.svg"
+                    alt=""
+                  />
+                  <img
+                    class="chevron-up"
+                    src="./assets/icons/chevron up.svg"
+                    alt=""
+                  />
+                </button>
+                <input type="text" />
+                <img
+                  class="cross-select"
+                  src="./assets/icons/cross.svg"
+                  alt=""
+                />
+                <img
+                  class="loop-select"
+                  src="./assets/icons/loop select.svg"
+                  alt=""
+                />
+              </div>
+              <ul>
+                <li>ingredients1</li>
+                <li>ingredients2</li>
+                <li>ingredients3</li>
+                <li>ingredients4</li>
+                <li>ingredients5</li>
+                <li>ingredients6</li>
+                <li>ingredients7</li>
+              </ul>
+            </div>
+            <div class="custom-select" id="devices">
+              <div class="custom-select-header">
+                <button>
+                  Appareils
+                  <img
+                    class="chevron-down"
+                    src="./assets/icons/chevron down.svg"
+                    alt=""
+                  />
+                  <img
+                    class="chevron-up"
+                    src="./assets/icons/chevron up.svg"
+                    alt=""
+                  />
+                </button>
+                <input type="text" />
+                <img
+                  class="cross-select"
+                  src="./assets/icons/cross.svg"
+                  alt=""
+                />
+                <img
+                  class="loop-select"
+                  src="./assets/icons/loop select.svg"
+                  alt=""
+                />
+              </div>
+              <ul>
+                <li>ingredients1</li>
+                <li>ingredients2</li>
+                <li>ingredients3</li>
+              </ul>
+            </div>
+            <div class="custom-select" id="utensils">
+              <div class="custom-select-header">
+                <button>
+                  Ustensils
+                  <img
+                    class="chevron-down"
+                    src="./assets/icons/chevron down.svg"
+                    alt=""
+                  />
+                  <img
+                    class="chevron-up"
+                    src="./assets/icons/chevron up.svg"
+                    alt=""
+                  />
+                </button>
+                <input type="text" />
+                <img
+                  class="cross-select"
+                  src="./assets/icons/cross.svg"
+                  alt=""
+                />
+                <img
+                  class="loop-select"
+                  src="./assets/icons/loop select.svg"
+                  alt=""
+                />
+              </div>
+              <ul>
+                <li>ingredients1</li>
+                <li>ingredients2</li>
+                <li>ingredients3</li>
+                <li>ingredients4</li>
+              </ul>
+            </div>
           </div>
-          <div id="devices">
-            <button>Appareils</button>
-            <input type="text" />
-          </div>
-          <div id="utensils">
-            <button>Ustensiles</button>
-            <input type="text" />
-          </div>
+          <h3 class="recipe-number">1500 recettes</h3>
         </div>
-        <div class="filter-selected">ICI AJOUT DES FILTRE UTILISE</div>
+        <div class="filter-selected">
+          <button>
+            Creme coco <img src="./assets/icons/Black cross.svg" alt="" />
+          </button>
+        </div>
       </section>
-      <section class="recipe-gallery">ICI LES CARTES RECETTE FILTREE</section>
+      <section class="recipes-gallery">
+        <ul class="recipes-list">
+          <li class="recipe-container">
+            <img src="./assets/img/Recette02.jpg" alt="" />
+            <span>10min</span>
+            <div class="recipe-content">
+              <h4>Limonade ta vu</h4>
+              <h5>RECETTE</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                est qui fugiat animi provident? Facilis unde vero, possimus,
+                repellendus velit, ea minima odit est quam qui harum repudiandae
+                sint dolorum?
+              </p>
+              <h5>INGREDIENTS</h5>
+              <div class="ingredients">
+                <div class="ingredient">
+                  <h6>lait de coco</h6>
+                  <p>400ml</p>
+                </div>
+                <div class="ingredient">
+                  <h6>lait coco</h6>
+                  <p>400ml</p>
+                </div>
+                <div class="ingredient">
+                  <h6>coco</h6>
+                  <p>4</p>
+                </div>
+                <div class="ingredient">
+                  <h6>lait</h6>
+                  <p>0ml</p>
+                </div>
+                <div class="ingredient">
+                  <h6>test</h6>
+                  <p>400ml</p>
+                </div>
+                <div class="ingredient">
+                  <h6>laiaze</h6>
+                  <p>400ml</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="recipe-container">
+            <img src="./assets/img/Recette02.jpg" alt="" />
+            <span>40min</span>
+            <div class="recipe-content">
+              <h4>Limonade ta vu</h4>
+              <h5>RECETTE</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                est qui fugiat animi provident? Facilis unde vero, possimus,
+                repellendus velit, ea minima odit est quam qui harum repudiandae
+                sint dolorum?
+              </p>
+              <h5>INGREDIENTS</h5>
+              <div class="ingredients">
+                <div class="ingredient">
+                  <h6>lait de coco</h6>
+                  <p>400ml</p>
+                </div>
+                <div class="ingredient">
+                  <h6>lait coco</h6>
+                  <p>400ml</p>
+                </div>
+                <div class="ingredient">
+                  <h6>coco</h6>
+                  <p>4</p>
+                </div>
+                <div class="ingredient">
+                  <h6>lait</h6>
+                  <p>0ml</p>
+                </div>
+                <div class="ingredient">
+                  <h6>test</h6>
+                  <p>400ml</p>
+                </div>
+                <div class="ingredient">
+                  <h6>laiaze</h6>
+                  <p>400ml</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="recipe-container">
+            <img src="./assets/img/Recette02.jpg" alt="" />
+            <span>60min</span>
+            <div class="recipe-content">
+              <h4>Limonade ta vu</h4>
+              <h5>RECETTE</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                est qui fugiat animi provident? Facilis unde vero, possimus,
+                repellendus velit, ea minima odit est quam qui harum repudiandae
+                sint dolorum?
+              </p>
+              <h5>INGREDIENTS</h5>
+              <div class="ingredients">
+                <div class="ingredient">
+                  <h6>lait de coco</h6>
+                  <p>400ml</p>
+                </div>
+                <div class="ingredient">
+                  <h6>lait coco</h6>
+                  <p>400ml</p>
+                </div>
+                <div class="ingredient">
+                  <h6>coco</h6>
+                  <p>4</p>
+                </div>
+                <div class="ingredient">
+                  <h6>lait</h6>
+                  <p>0ml</p>
+                </div>
+                <div class="ingredient">
+                  <h6>test</h6>
+                  <p>400ml</p>
+                </div>
+                <div class="ingredient">
+                  <h6>laiaze</h6>
+                  <p>400ml</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer></footer>
   </body>

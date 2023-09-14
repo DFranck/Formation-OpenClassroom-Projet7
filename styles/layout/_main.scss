@@ -1,0 +1,19 @@
+@use "../settings" as set;
+@use "../components/customs-selecte";
+@use "../components/cards";
+
+main{
+    background: #EDEDED;
+    padding: 20px 80px;
+    h3, li, input{
+        font-family: set.$Font2;
+    }
+    h3{
+       font-size: 16px;
+       font-weight: 500; 
+    }
+    li, input{
+        font-size: 14px;
+    }
+    
+}

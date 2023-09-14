@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
     .visually-hidden{
         visibility: hidden;
     }
 }
-
 @font-face {
     font-family: "Anton";
     src: url("../assets/fonts/Anton-Regular.ttf");
@@ -17,6 +17,7 @@
 }
 $Font1 : "Anton", sans-serif;
 $Font2 :"Manrope", sans-serif;
+$White : #ffffff;
 $Yellow : #ffd15b;
 $Black: #1b1b1b;
 $Grey: #7a7a7a;

@@ -2,7 +2,7 @@
 
 ## Description
 
-Mise en place de deux implémentations différentes pour la recherche principale afin de pouvoir comparer leurs performances et choisir la meilleure. 
+Mise en place de deux implémentations différentes pour la recherche principale afin de pouvoir comparer leurs performances et choisir la meilleure.
 
 ## Contraintes
 
@@ -14,7 +14,7 @@ Mise en place de deux implémentations différentes pour la recherche principale
 - Réaliser un schéma ou "algorigramme" (suggestion : utiliser draw.io, outil gratuit et pratique).
 - Implémenter les deux versions en utilisant deux branches différentes sur Git. Une seule version de la recherche peut être utilisée pour les recherches par tag pour les deux branches.
 - Respecter les bonnes pratiques du Green Code : découper le code au maximum en fonctions réutilisables, par exemple pour les cartes des recettes ou encore la génération des listes de tags.
-- Prévenir les risques d’injection de balises HTML ou toute autre faille de sécurité dans le site via les formulaires.
+- Prévenir les risques d’injection de balises HTML ou toute autre faille de sécurité dans le site via les formulaires. (REGEX et https://www.w3schools.com/sql/sql_injection.asp)
 - Tester la performance des algorithmes sur Jsben.ch pour uniquement la recherche principale. Ajouter ensuite les résultats à la fiche d’investigation de fonctionnalité.
 - Terminer le document par la recommandation de l'algorithme à conserver.
 
@@ -26,3 +26,7 @@ Mise en place de deux implémentations différentes pour la recherche principale
    - Une version en programmation fonctionnelle avec les méthodes de l'objet Array (forEach, filter, map, reduce).
    - Commencer à remplir le document d’investigation de fonctionnalité pour bien décrire les deux implémentations à comparer.
 
+complexité syntaxique (rapidité d'execution)
+complexité sémentique (lecture par un humain)
+algo 1 naif (qui fonctionne)
+algo 2 meilleur performance

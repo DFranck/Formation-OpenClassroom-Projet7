@@ -1,0 +1,72 @@
+@use '../settings' as set;
+
+.recipes-gallery{
+    max-width: 1440px;
+    margin-top: 40px;
+    .recipes-list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .recipe-container{
+            position: relative;
+            width: 380px;
+            height: 731px;
+            border-radius: 21px;
+            background: set.$White;
+            img{
+                width: 100%;
+                height: 253px;
+                border-radius: 21px 21px 0 0;
+                object-fit: cover;
+            }
+            span{
+                position: absolute;
+                top: 21px;
+                left: 295px;
+                background: set.$Yellow;
+                border-radius: 14px;
+                padding: 5px 15px ;
+                font-family: set.$Font2;
+                font-size: 12px;
+            }
+            .recipe-content{
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                h4{
+                    font-family: set.$Font1;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                h5{
+                    margin-top: 32px;
+                    margin-bottom: 15px;
+                    font-family: set.$Font2;
+                    font-size: 12px;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    color: set.$Grey;
+                }
+                p{
+                    font-family: set.$Font2;
+                    font-size: 14px;
+                }
+                .ingredients{
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    gap: 10px;
+                    h6{
+                        font-family: set.$Font2;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    p{
+                        color: set.$Grey;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

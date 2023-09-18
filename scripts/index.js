@@ -6,7 +6,6 @@ async function init() {
   const recipes = await fetchRecipes();
   filterRecipes(recipes);
   toggleFilter();
-  console.log(recipes);
 }
 
 init();

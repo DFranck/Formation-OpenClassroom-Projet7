@@ -42,7 +42,6 @@ export const toggleFilter = () => {
     });
   });
   const openFilterMenu = (whichBtn) => {
-    console.log(chevronDown, chevronUp);
     if (whichBtn === "ingredients" && !isIngredientsOpen) {
       isIngredientsOpen = true;
       chevronDown.style.opacity = 0;

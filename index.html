@@ -52,9 +52,9 @@
       <section class="filter">
         <div class="filter-header">
           <div class="custom-selects">
-            <div class="custom-select" id="ingredients">
+            <div class="custom-select" class="ingredients">
               <div class="custom-select-header">
-                <button>
+                <button id="ingredients">
                   Ingrédients
                   <img
                     class="chevron-down"
@@ -67,19 +67,19 @@
                     alt=""
                   />
                 </button>
-                <input type="text" />
+                <input type="text" class="ingredients" />
                 <img
-                  class="cross-select"
+                  class="cross-select ingredients"
                   src="./assets/icons/cross.svg"
                   alt=""
                 />
                 <img
-                  class="loop-select"
+                  class="loop-select ingredients"
                   src="./assets/icons/loop select.svg"
                   alt=""
                 />
               </div>
-              <ul>
+              <ul class="ingredients">
                 <li>ingredients1</li>
                 <li>ingredients2</li>
                 <li>ingredients3</li>
@@ -89,9 +89,9 @@
                 <li>ingredients7</li>
               </ul>
             </div>
-            <div class="custom-select" id="devices">
+            <div class="custom-select" class="devices">
               <div class="custom-select-header">
-                <button>
+                <button id="devices">
                   Appareils
                   <img
                     class="chevron-down"
@@ -104,27 +104,27 @@
                     alt=""
                   />
                 </button>
-                <input type="text" />
+                <input type="text" class="devices" />
                 <img
-                  class="cross-select"
+                  class="cross-select devices"
                   src="./assets/icons/cross.svg"
                   alt=""
                 />
                 <img
-                  class="loop-select"
+                  class="loop-select devices"
                   src="./assets/icons/loop select.svg"
                   alt=""
                 />
               </div>
-              <ul>
+              <ul class="devices">
                 <li>ingredients1</li>
                 <li>ingredients2</li>
                 <li>ingredients3</li>
               </ul>
             </div>
-            <div class="custom-select" id="utensils">
+            <div class="custom-select" class="utensils">
               <div class="custom-select-header">
-                <button>
+                <button id="utensils">
                   Ustensils
                   <img
                     class="chevron-down"
@@ -137,19 +137,19 @@
                     alt=""
                   />
                 </button>
-                <input type="text" />
+                <input type="text" class="utensils" />
                 <img
-                  class="cross-select"
+                  class="cross-select utensils"
                   src="./assets/icons/cross.svg"
                   alt=""
                 />
                 <img
-                  class="loop-select"
+                  class="loop-select utensils"
                   src="./assets/icons/loop select.svg"
                   alt=""
                 />
               </div>
-              <ul>
+              <ul class="utensils">
                 <li>ingredients1</li>
                 <li>ingredients2</li>
                 <li>ingredients3</li>
@@ -171,5 +171,5 @@
     </main>
     <footer></footer>
   </body>
-  <script src="./scripts/index.js"></script>
+  <script type="module" src="./scripts/index.js"></script>
 </html>

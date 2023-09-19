@@ -1,0 +1,130 @@
+<mxfile host="app.diagrams.net" modified="2023-09-19T09:50:44.957Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="D5q9blLWLsibHIkn-jkC" version="21.7.5" type="device">
+  <diagram name="Page-1" id="xX0gcjtB64FFGQSJdiLm">
+    <mxGraphModel dx="1436" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EcOWKly9rekFQr-3yZEX-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="EcOWKly9rekFQr-3yZEX-1" target="EcOWKly9rekFQr-3yZEX-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-1" value="L&#39;utilisateur entre une requête dans la barre de recherche" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EcOWKly9rekFQr-3yZEX-6" target="EcOWKly9rekFQr-3yZEX-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="60" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="570" y="180" />
+              <mxPoint x="570" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="EcOWKly9rekFQr-3yZEX-6" target="EcOWKly9rekFQr-3yZEX-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-6" value="La requête a-t-elle au moins 3 caractères ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="374" y="140" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-8" value="Non" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="474" y="150" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-9" value="Oui" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="420" y="230" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EcOWKly9rekFQr-3yZEX-11" target="EcOWKly9rekFQr-3yZEX-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-37" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EcOWKly9rekFQr-3yZEX-11" target="EcOWKly9rekFQr-3yZEX-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-11" value="Initialisation d&#39;un tableau vide pour les résultats&lt;span style=&quot;color: rgb(55, 65, 81); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 16px; text-align: left; background-color: rgb(247, 247, 248);&quot;&gt;.&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-15" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="EcOWKly9rekFQr-3yZEX-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="544" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="EcOWKly9rekFQr-3yZEX-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="639" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-14" value="Le titre, les ingrédients ou la description de la recette contiennent-ils la requête ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="374" y="504" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-23" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="EcOWKly9rekFQr-3yZEX-19" target="EcOWKly9rekFQr-3yZEX-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="764" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-19" value=" ajoutez cette recette au tableau des résultats." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="639" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-20" value="Oui" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="594" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-21" value="Non" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="480" y="514" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EcOWKly9rekFQr-3yZEX-22" target="EcOWKly9rekFQr-3yZEX-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-22" value="Ne rien faire de cette recette" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="514" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-27" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="EcOWKly9rekFQr-3yZEX-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="794" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-28" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="EcOWKly9rekFQr-3yZEX-24" target="EcOWKly9rekFQr-3yZEX-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="914" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-24" value="Le tableau des résultats est-il vide ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="374" y="754" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-29" value="affichez les recettes du tableau des résultats." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="884" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-30" value="Non" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="405" y="842" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-31" value="Oui" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="300" y="762" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-32" value="affichez un message indiquant qu&#39;aucune recette ne correspond à la recherche." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="764" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-35" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EcOWKly9rekFQr-3yZEX-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-33" value="Boucle &lt;code style=&quot;border: 0px solid rgb(217, 217, 227); box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; font-size: 0.875em; color: var(--tw-prose-code); font-family: &amp;quot;Söhne Mono&amp;quot;, Monaco, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Ubuntu Mono&amp;quot;, monospace !important;&quot;&gt;for&lt;/code&gt; pour parcourir chaque recette&lt;span style=&quot;color: rgb(55, 65, 81); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 16px; text-align: left; background-color: rgb(247, 247, 248);&quot;&gt;.&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-38" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EcOWKly9rekFQr-3yZEX-36" target="EcOWKly9rekFQr-3yZEX-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-36" value="Utilisation de la méthode &lt;code style=&quot;border: 0px solid rgb(217, 217, 227); box-sizing: border-box; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(69,89,164,.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparent; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; font-size: 0.875em; color: var(--tw-prose-code); font-family: &amp;quot;Söhne Mono&amp;quot;, Monaco, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Ubuntu Mono&amp;quot;, monospace !important;&quot;&gt;filter&lt;/code&gt;&lt;span style=&quot;color: rgb(55, 65, 81); font-family: Söhne, ui-sans-serif, system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 16px; text-align: left; background-color: rgb(247, 247, 248);&quot;&gt; :&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="445" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-39" value="Cas 1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="304" y="348" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EcOWKly9rekFQr-3yZEX-40" value="Cas 2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="474" y="348" width="50" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

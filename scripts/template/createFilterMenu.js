@@ -4,7 +4,7 @@ export function createFilterMenu(menu, listItems) {
   listItems.forEach((item) => {
     const li = document.createElement("li");
     const img = document.createElement("img");
-    img.setAttribute("src", "../../assets/icons/Group 11.svg");
+    img.setAttribute("src", "../../assets/icons/li-cross.svg");
     li.innerHTML = item;
     li.appendChild(img);
     li.setAttribute("tabindex", 0);

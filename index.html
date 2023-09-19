@@ -15,14 +15,14 @@
   </head>
   <body>
     <header>
-      <h1 id="logo">
-        <figure>
-          <img src="../../assets/icons/Logo.svg" alt="Logo" />
-          <figcaption class="visually-hidden">
-            Nom du site / Titre principal
-          </figcaption>
-        </figure>
-      </h1>
+      <figure>
+        <h1 id="logo">
+          <img src="../../assets/icons/logo.svg" alt="Logo" />
+        </h1>
+        <figcaption class="visually-hidden">
+          Nom du site / Titre principal
+        </figcaption>
+      </figure>
       <h2>
         CHERCHEZ PARMI PLUS DE 1500 RECETTES DU QUOTIDIEN,SIMPLES ET DÉLICIEUSES
       </h2>
@@ -36,12 +36,12 @@
         </button>
         <button id="loop-cta">
           <img
-            src="./assets/icons/Property 1=Variant2.svg"
+            src="./assets/icons/loop-variant.svg"
             alt="bouton rechercher survolé"
             id="loop-cta-hover"
           />
           <img
-            src="./assets/icons/Property 1=Default.svg"
+            src="./assets/icons/loop-default.svg"
             alt="bouton rechercher par default"
             id="loop-cta-default"
           />
@@ -49,7 +49,7 @@
       </div>
     </header>
     <main>
-      <section class="filter">
+      <section class="filter sr-only">
         <div class="filter-header">
           <div class="custom-selects">
             <div class="custom-select ingredients">
@@ -58,12 +58,12 @@
                   Ingrédients
                   <img
                     class="chevron-down"
-                    src="./assets/icons/chevron down.svg"
+                    src="./assets/icons/chevron-down.svg"
                     alt=""
                   />
                   <img
                     class="chevron-up"
-                    src="./assets/icons/chevron up.svg"
+                    src="./assets/icons/chevron-up.svg"
                     alt=""
                   />
                 </button>
@@ -75,7 +75,7 @@
                 />
                 <img
                   class="loop-select ingredients"
-                  src="./assets/icons/loop select.svg"
+                  src="./assets/icons/loop-select.svg"
                   alt=""
                 />
               </div>
@@ -87,12 +87,12 @@
                   Appareils
                   <img
                     class="chevron-down"
-                    src="./assets/icons/chevron down.svg"
+                    src="./assets/icons/chevron-down.svg"
                     alt=""
                   />
                   <img
                     class="chevron-up"
-                    src="./assets/icons/chevron up.svg"
+                    src="./assets/icons/chevron-up.svg"
                     alt=""
                   />
                 </button>
@@ -104,7 +104,7 @@
                 />
                 <img
                   class="loop-select devices"
-                  src="./assets/icons/loop select.svg"
+                  src="./assets/icons/loop-select.svg"
                   alt=""
                 />
               </div>
@@ -116,12 +116,12 @@
                   Ustensils
                   <img
                     class="chevron-down"
-                    src="./assets/icons/chevron down.svg"
+                    src="./assets/icons/chevron-down.svg"
                     alt=""
                   />
                   <img
                     class="chevron-up"
-                    src="./assets/icons/chevron up.svg"
+                    src="./assets/icons/chevron-up.svg"
                     alt=""
                   />
                 </button>
@@ -133,7 +133,7 @@
                 />
                 <img
                   class="loop-select utensils"
-                  src="./assets/icons/loop select.svg"
+                  src="./assets/icons/loop-select.svg"
                   alt=""
                 />
               </div>
@@ -144,15 +144,15 @@
         </div>
         <div class="filter-selected">
           <button>
-            Creme coco <img src="./assets/icons/Black cross.svg" alt="" />
+            Creme coco <img src="./assets/icons/black-cross.svg" alt="" />
           </button>
         </div>
       </section>
-      <section class="recipes-gallery">
+      <section class="recipes-gallery sr-only">
         <ul class="recipes-list"></ul>
       </section>
     </main>
     <footer></footer>
+    <script type="module" src="./scripts/index.js"></script>
   </body>
-  <script type="module" src="./scripts/index.js"></script>
 </html>

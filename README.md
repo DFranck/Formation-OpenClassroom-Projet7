@@ -6,27 +6,42 @@ Mise en place de deux implémentations différentes pour la recherche principale
 
 ## Contraintes
 
-- Respecter le design à la lettre.
-- Créer un document de comparaison, nommé “fiche d’investigation de fonctionnalité”. Réutiliser directement le même modèle de document.
-- Possibilité d'utiliser Bootstrap ou Tailwind, mais uniquement pour les fonctionnalités CSS. Tout le code JavaScript doit être écrit manuellement.
-- Valider le code avec le validateur W3C.
-- Se concentrer uniquement sur le champ de recherche principal pour ces deux implémentations.
-- Réaliser un schéma ou "algorigramme" (suggestion : utiliser draw.io, outil gratuit et pratique).
-- Implémenter les deux versions en utilisant deux branches différentes sur Git. Une seule version de la recherche peut être utilisée pour les recherches par tag pour les deux branches.
-- Respecter les bonnes pratiques du Green Code : découper le code au maximum en fonctions réutilisables, par exemple pour les cartes des recettes ou encore la génération des listes de tags.
-- Prévenir les risques d’injection de balises HTML ou toute autre faille de sécurité dans le site via les formulaires. (REGEX et https://www.w3schools.com/sql/sql_injection.asp)
-- Tester la performance des algorithmes sur Jsben.ch pour uniquement la recherche principale. Ajouter ensuite les résultats à la fiche d’investigation de fonctionnalité.
-- Terminer le document par la recommandation de l'algorithme à conserver.
+- [x] Respecter le design à la lettre.
+- [x] Créer un document de comparaison, nommé “fiche d’investigation de fonctionnalité”.
+- [x] Possibilité d'utiliser Bootstrap ou Tailwind, mais uniquement pour les fonctionnalités CSS. Tout le code JavaScript doit être écrit manuellement.
+- [ ] Valider le code avec le validateur W3C.
+- [x] Se concentrer uniquement sur le champ de recherche principal pour ces deux implémentations.
+- [ ] Réaliser un schéma ou "algorigramme".
+- [ ] Implémenter les deux versions en utilisant deux branches différentes sur Git.
+- [ ] Respecter les bonnes pratiques du Green Code.
+- [ ] Prévenir les risques d’injection de balises HTML ou toute autre faille de sécurité.
+- [ ] Tester la performance des algorithmes sur Jsben.ch pour uniquement la recherche principale.
+- [ ] Terminer le document par la recommandation de l'algorithme à conserver.
 
 ## Développement
 
-1. **Interface** : Commencer par implémenter l'interface pour s'en débarrasser.
-2. **Algorithmes** : Procéder en 3 étapes. Planifier les 2 versions de la fonctionnalité à tester :
-   - Une version utilisant les boucles natives (while, for...).
-   - Une version en programmation fonctionnelle avec les méthodes de l'objet Array (forEach, filter, map, reduce).
-   - Commencer à remplir le document d’investigation de fonctionnalité pour bien décrire les deux implémentations à comparer.
+1. **Interface** :
 
-complexité syntaxique (rapidité d'execution)
-complexité sémentique (lecture par un humain)
-algo 1 naif (qui fonctionne)
-algo 2 meilleur performance
+   - [x] Commencer par implémenter l'interface.
+   - [ ] Vérifier la compatibilité sur différents navigateurs.
+   - [ ] Assurer la responsivité sur mobile, tablette et desktop.
+
+2. **Algorithmes** :
+
+   - [x] Planifier les 2 versions de la fonctionnalité à tester.
+   - [ ] Implémenter la version utilisant les boucles natives (while, for...).
+   - [ ] Implémenter la version en programmation fonctionnelle avec les méthodes de l'objet Array (forEach, filter, map, reduce).
+   - [ ] Remplir le document d’investigation de fonctionnalité pour décrire les deux implémentations à comparer.
+   - [ ] Créer des tests unitaires pour chaque fonctionnalité.
+
+3. **Optimisation et Sécurité** :
+
+   - [ ] Optimiser le temps de chargement des images et des scripts.
+   - [ ] Assurer la sécurité des données utilisateur.
+   - [ ] Vérifier la performance de la recherche avec un grand nombre de recettes.
+
+4. **Documentation et Finalisation** :
+   - [ ] Compléter la documentation du code.
+   - [ ] Faire une revue de code.
+   - [ ] Tester le site sur différents appareils et navigateurs.
+   - [ ] Obtenir des retours d'utilisateurs et ajuster en conséquence.

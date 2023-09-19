@@ -3,7 +3,11 @@ export function createFilterMenu(menu, listItems) {
   menuToFill.innerHTML = "";
   listItems.forEach((item) => {
     const li = document.createElement("li");
-    li.textContent = item;
+    const img = document.createElement("img");
+    img.setAttribute("src", "../../assets/icons/Group 11.svg");
+    li.innerHTML = item;
+    li.appendChild(img);
+    li.setAttribute("tabindex", 0);
     menuToFill.appendChild(li);
   });
 }

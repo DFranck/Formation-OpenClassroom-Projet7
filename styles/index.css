@@ -170,17 +170,25 @@ header #searchBar #loop-cta #loop-cta-hover {
 .filter .filter-header .custom-selects .custom-select ul::-webkit-scrollbar {
   display: none;
 }
+.filter .filter-header .custom-selects .custom-select ul img {
+  opacity: 0;
+}
 .filter .filter-header .custom-selects .custom-select ul :hover {
   background: #ffd15b;
+}
+.filter .filter-header .custom-selects .custom-select ul :hover img {
+  opacity: 1;
 }
 .filter .filter-header .custom-selects .custom-select ul li {
   z-index: 2;
   display: flex;
   align-items: center;
-  padding-left: 15px;
+  padding: 0 15px;
   height: 37px;
   width: 100%;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
 }
 .filter .filter-header .recipe-number {
   margin-top: 15px;

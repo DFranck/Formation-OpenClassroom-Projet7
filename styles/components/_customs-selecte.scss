@@ -77,20 +77,28 @@
                 overflow: auto;
                 scrollbar-width: none;
                 &::-webkit-scrollbar {
-                    display: none; // Pour les navigateurs WebKit comme Chrome et Safari
+                    display: none; 
                 }
                 display: none;
+                img{
+                    opacity: 0;
+                }
                 :hover{
                     background: set.$Yellow;
+                    img{
+                        opacity: 1;
+                    }
                 }
                 li{
                     z-index: 2;
                     display: flex;
                     align-items: center;
-                    padding-left: 15px;
+                    padding: 0 15px;
                     height: 37px;
                     width: 100%;
                     cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
                     }
                 }
             }

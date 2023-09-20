@@ -5,6 +5,7 @@ export function displayFiltersMenu(recipes) {
   let allIngredients = [];
   let allDevices = [];
   let allUtensils = [];
+  FiltersMenus.forEach((menu) => (menu.innerHTML = ""));
   recipes.forEach((recipe) => {
     const { ingredients, appliance, ustensils } = recipe;
     allIngredients = allIngredients.concat(

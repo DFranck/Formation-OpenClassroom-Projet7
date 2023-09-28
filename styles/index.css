@@ -173,12 +173,6 @@ header #searchBar #loop-cta #loop-cta-hover {
 .filter .filter-header .custom-selects .custom-select ul img {
   opacity: 0;
 }
-.filter .filter-header .custom-selects .custom-select ul :hover {
-  background: #ffd15b;
-}
-.filter .filter-header .custom-selects .custom-select ul :hover img {
-  opacity: 1;
-}
 .filter .filter-header .custom-selects .custom-select ul li {
   z-index: 2;
   display: flex;
@@ -190,11 +184,25 @@ header #searchBar #loop-cta #loop-cta-hover {
   display: flex;
   justify-content: space-between;
 }
+.filter .filter-header .custom-selects .custom-select ul li:hover {
+  background: #ffd15b;
+}
+.filter .filter-header .custom-selects .custom-select ul li.activeSearch {
+  background: #ffd15b;
+}
+.filter .filter-header .custom-selects .custom-select ul li.activeSearch img {
+  opacity: 1;
+}
 .filter .filter-header .recipe-number {
   margin-top: 15px;
   font-family: "Anton", sans-serif;
   font-size: 21px;
   font-weight: 400;
+}
+.filter .filter-selected {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .filter .filter-selected button {
   background: #ffd15b;

@@ -5,7 +5,6 @@ export function displayFiltersMenu(recipes) {
   let allIngredients = [];
   let allDevices = [];
   let allUtensils = [];
-  FiltersMenus.forEach((menu) => (menu.innerHTML = ""));
   recipes.forEach((recipe) => {
     const { ingredients, appliance, ustensils } = recipe;
     allIngredients = allIngredients.concat(
@@ -27,4 +26,28 @@ export function displayFiltersMenu(recipes) {
       createFilterMenu(thisMenu, allUtensils);
     }
   });
-}
+  const listOfFilter = document.querySelectorAll('.list-filter')
+  const filterSelected = document.querySelector('.filter-selected')
+    listOfFilter.forEach((item)=>{
+        item.addEventListener('click',(e)=>{
+            const btnText = e.target.textContent.trim()
+            const isFilterBtn = document.getElementById(btnText)
+            if(isFilterBtn){
+              isFilterBtn.remove()
+            } else {
+              const newBtn = document.createElement('button');
+              const newImg = document.createElement('img');
+              newImg.setAttribute('src',"./assets/icons/black-cross.svg")
+              newBtn.textContent= btnText
+              newBtn.setAttribute('class', "filterBtn")
+              newBtn.setAttribute('id',btnText)
+              newBtn.appendChild(newImg)
+              filterSelected.appendChild(newBtn)
+              newBtn.addEventListener('click',()=>{
+                newBtn.remove()
+                })
+              }
+            })
+          })
+          
+        }

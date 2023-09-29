@@ -8,4 +8,5 @@ export const displayRecipes = (filteredRecipes) => {
     const newRecipe = createRecipeCard(recipe);
     recipesList.appendChild(newRecipe);
   });
+  
 };

@@ -1,4 +1,9 @@
+
 export const toggleFilter = () => {
+  
+  const inputSearch = document.getElementById("searchBar");
+  const filterMenu = document.querySelectorAll(".custom-select ul");
+  const newEvent = new Event("filterChange");
   const selectBtn = document.querySelectorAll(".custom-select-header button");
   const ingredientsFilter = document.querySelectorAll(
     ".custom-select .ingredients"
@@ -89,4 +94,27 @@ export const toggleFilter = () => {
       });
     }
   }
+  function refreshBtnList() {
+    const btnList = [
+      ...document.querySelectorAll(".filter .filter-selected button"),
+    ];
+    btnList.forEach((btn) => {
+      btn.removeEventListener("click", onBtnClick);
+    });
+    btnList.forEach((btn) => {
+      btn.addEventListener("click", onBtnClick);
+    });
+  }
+  function onBtnClick() {
+    document.dispatchEvent(newEvent);
+  }
+  filterMenu.forEach((li) => {
+    li.addEventListener("click", () => {
+      document.dispatchEvent(newEvent);
+      refreshBtnList()
+    });
+  });
+  inputSearch.addEventListener("input", () => {
+    document.dispatchEvent(newEvent);
+  });
 };

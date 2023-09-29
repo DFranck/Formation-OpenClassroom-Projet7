@@ -1,4 +1,5 @@
 import { createRecipeCard } from "../template/createRecipeCard.js";
+
 export const displayRecipes = (filteredRecipes) => {
   const recipesList = document.querySelector(".recipes-list");
   const recepesNumber = document.querySelector('.recipe-number')
@@ -8,5 +9,4 @@ export const displayRecipes = (filteredRecipes) => {
     const newRecipe = createRecipeCard(recipe);
     recipesList.appendChild(newRecipe);
   });
-  
 };

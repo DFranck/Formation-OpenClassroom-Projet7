@@ -3,13 +3,13 @@ import { displayRecipes } from "./displayRecipes.js";
 import { fetchRecipes } from "../api/fetchRecipes.js";
 
 export async function filterRecipes() {
-  let recipes = [];
   const btnList = [
     ...document.querySelectorAll(".filter .filter-selected button"),
   ];
   const inputValue = document.getElementById("searchBarInput").value.trim();
   const filteredRecipesByBtn = [];
   const filteredRecipesByInput = [];
+  let recipes = [];
   let appliances = "";
   let ingredientsList = "";
   let ustensilsList = "";

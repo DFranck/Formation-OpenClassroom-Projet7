@@ -1,5 +1,4 @@
 export function createFilterMenu(menu, listItems) {
-  let newListItem = [];
   const filterSelected = document.querySelector(".filter-selected");
   const inputfilter = document.querySelector(
     `.filter .filter-header .custom-selects .custom-select .custom-select-header input.${menu}`
@@ -11,11 +10,11 @@ export function createFilterMenu(menu, listItems) {
     ".filter .filter-selected button"
   );
   const menuToFill = document.querySelector(`.${menu} ul`);
+  let newListItem = [];
   newListItem.length === 0
     ? createListItem(listItems)
     : createListItem(newListItem);
   function createListItem(listItems) {
-    console.log(listItems);
     menuToFill.innerHTML = "";
     listItems.forEach((item) => {
       const li = document.createElement("li");
@@ -34,7 +33,6 @@ export function createFilterMenu(menu, listItems) {
         const isFilterBtn = document.getElementById(btnText);
         if (isFilterBtn) {
           isFilterBtn.remove();
-          inputfilter.value = "";
         } else {
           inputfilter.value = "";
           const newBtn = document.createElement("button");

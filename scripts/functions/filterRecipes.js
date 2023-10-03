@@ -1,9 +1,17 @@
 import { displayFiltersMenu } from "./displayFiltersMenus.js";
 import { displayRecipes } from "./displayRecipes.js";
 import { fetchRecipes } from "../api/fetchRecipes.js";
+
 // O(m + n * p) = O(nb de Btn + nb de recette * nb d'ingredients/ustensils)
+let recipes= []
+
 export async function filterRecipes() {
-  const recipes = await fetchRecipes("../../data/recipes.js");
+
+  console.time('filterRecipes performance');
+//24ms fetch, 13ms 50 recipes, 1.5ms filter
+  if (recipes.length===0){
+    recipes = await fetchRecipes("../../data/recipes.js");
+  }
   const btnList = [
     ...document.querySelectorAll(".filter .filter-selected button"),
   ];
@@ -37,9 +45,9 @@ export async function filterRecipes() {
 
     return true;
   });
-  console.log(filteredRecipes);
-  console.log(btnList, btnSet);
 
   displayRecipes(filteredRecipes);
   displayFiltersMenu(filteredRecipes);
+
+console.timeEnd('filterRecipes performance')
 }

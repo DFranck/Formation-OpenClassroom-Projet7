@@ -7,7 +7,7 @@ let recipes = [];
 
 export async function filterRecipes() {
   console.time("filterRecipes Performance");
-//20ms first fetch, 13ms 50recette, 3ms filter
+  //20ms first fetch, 13ms 50recette, 3ms filter
   const btnList = [
     ...document.querySelectorAll(".filter .filter-selected button"),
   ];
@@ -86,6 +86,8 @@ export async function filterRecipes() {
     filteredRecipes = filteredRecipesByBtn;
   } else if (filteredRecipesByInput.length > 0) {
     filteredRecipes = filteredRecipesByInput;
+  } else if (filteredRecipesByInput.length === 0 && inputValue.length > 2) {
+    filteredRecipes = [];
   } else {
     filteredRecipes = recipes;
   }

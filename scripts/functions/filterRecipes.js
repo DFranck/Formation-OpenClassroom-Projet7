@@ -1,7 +1,7 @@
 import { displayFiltersMenu } from "./displayFiltersMenus.js";
 import { displayRecipes } from "./displayRecipes.js";
 import { fetchRecipes } from "../api/fetchRecipes.js";
-
+//O(n * (m + p * m + d * m + 1 + p)) = O( recettes * (btn + btn * ingrédients + btn * ustensils + input + recette))
 export async function filterRecipes() {
   const btnList = [
     ...document.querySelectorAll(".filter .filter-selected button"),

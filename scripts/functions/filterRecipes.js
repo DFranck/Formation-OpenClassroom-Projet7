@@ -1,19 +1,24 @@
 import { displayFiltersMenu } from "./displayFiltersMenus.js";
 import { displayRecipes } from "./displayRecipes.js";
 import { fetchRecipes } from "../api/fetchRecipes.js";
+
 //O(n * (m + p * m + d * m + 1 + p)) = O( recettes * (btn + btn * ingrédients + btn * ustensils + input + recette))
+let recipes = [];
+
 export async function filterRecipes() {
+  console.time("filterRecipes Performance");
+//20ms first fetch, 13ms 50recette, 3ms filter
   const btnList = [
     ...document.querySelectorAll(".filter .filter-selected button"),
   ];
   const inputValue = document.getElementById("searchBarInput").value.trim();
   const filteredRecipesByBtn = [];
   const filteredRecipesByInput = [];
-  let recipes = [];
   let appliances = "";
   let ingredientsList = "";
   let ustensilsList = "";
   let filteredRecipes = recipes;
+
   if (recipes.length === 0) {
     recipes = await fetchRecipes("../../data/recipes.js");
   }
@@ -86,4 +91,6 @@ export async function filterRecipes() {
   }
   displayRecipes(filteredRecipes);
   displayFiltersMenu(filteredRecipes);
+
+  console.timeEnd("filterRecipes Performance");
 }

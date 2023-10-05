@@ -3,9 +3,10 @@ export async function fetchRecipes() {
   if (localStoreRecipes) {
     return JSON.parse(localStoreRecipes);
   } else {
-    const responses = await import("./recipes.js");
+    const responses = await import("../../data/recipes.js");
     const recipes = responses.default;
     localStorage.setItem("store-recipes", JSON.stringify(recipes));
+    console.log(recipes);
     return recipes;
   }
 }

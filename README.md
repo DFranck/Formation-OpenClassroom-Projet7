@@ -28,19 +28,17 @@ Mise en place de deux implémentations différentes pour la recherche principale
 2. **Algorithmes** :
 
    - [x] Planifier les 2 versions de la fonctionnalité à tester.
-   - [ ] Implémenter la version utilisant les boucles natives (while, for...).
-   - [ ] Implémenter la version en programmation fonctionnelle avec les méthodes de l'objet Array (forEach, filter, map, reduce).
+   - [x] Implémenter la version utilisant les boucles natives (while, for...).
+   - [x] Implémenter la version en programmation fonctionnelle avec les méthodes de l'objet Array (forEach, filter, map, reduce).
    - [x] Remplir le document d’investigation de fonctionnalité pour décrire les deux implémentations à comparer.
-   - [ ] Créer des tests unitaires pour chaque fonctionnalité.
 
 3. **Optimisation et Sécurité** :
 
    - [ ] Optimiser le temps de chargement des images et des scripts.
-   - [ ] Assurer la sécurité des données utilisateur.
+   - [x] Assurer la sécurité des données utilisateur.
    - [ ] Vérifier la performance de la recherche avec un grand nombre de recettes.
 
 4. **Documentation et Finalisation** :
-   - [ ] Compléter la documentation du code.
-   - [ ] Faire une revue de code.
-   - [ ] Tester le site sur différents appareils et navigateurs.
-   - [ ] Obtenir des retours d'utilisateurs et ajuster en conséquence.
+   - [x] Compléter la documentation du code.
+   - [x] Faire une revue de code.
+   - [x] Tester le site sur différents appareils et navigateurs.

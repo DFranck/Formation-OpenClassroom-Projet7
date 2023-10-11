@@ -6,7 +6,6 @@ import { fetchRecipes } from "../api/fetchRecipes.js";
 let recipes= []
 
 export async function filterRecipes() {
-
   console.time('filterRecipes performance');
 //24ms fetch, 13ms 50 recipes, 1.5ms filter
   if (recipes.length===0){
@@ -15,36 +14,32 @@ export async function filterRecipes() {
   const btnList = [
     ...document.querySelectorAll(".filter .filter-selected button"),
   ];
-  const btnSet = new Set(btnList.map((btn) => btn.id.toLowerCase()));
   const inputValue = document
     .getElementById("searchBarInput")
     .value.trim()
     .toLowerCase();
-  const filteredRecipes = recipes.filter((recipe) => {
-    if (inputValue.length >= 3) {
-      const nameMatch = recipe.name.toLowerCase().includes(inputValue);
-      const descriptionMatch = recipe.description
-        .toLowerCase()
-        .includes(inputValue);
-      const ingredientMatch = recipe.ingredients.some((ing) =>
-        ing.ingredient.toLowerCase().includes(inputValue)
-      );
-      if (!nameMatch || !descriptionMatch || !ingredientMatch) return false;
-    }
-    if (btnList.length > 0) {
-      const applianceMatch = btnSet.has(recipe.appliance.toLowerCase());
-      const ingredientMatch = recipe.ingredients.some((ing) =>
-        btnSet.has(ing.ingredient.toLowerCase())
-      );
-      const ustensilsMatch = recipe.ustensils.some((ustensil) =>
-        btnSet.has(ustensil.toLowerCase())
-      );
-      if (applianceMatch + ingredientMatch + ustensilsMatch < btnList.length)
-        return false;
-    }
-
-    return true;
+    const filteredRecipes = recipes.filter((recipe) => {
+      let isRecipeValid = true;
+      if (inputValue.length >= 3) {
+        const nameMatch = recipe.name.toLowerCase().includes(inputValue);
+        const descriptionMatch = recipe.description.toLowerCase().includes(inputValue);
+        const ingredientMatch = recipe.ingredients.some((ing) => ing.ingredient.toLowerCase().includes(inputValue));
+        if (!nameMatch && !descriptionMatch && !ingredientMatch) return false;
+      }
+      if (btnList.length > 0) {
+        btnList.forEach((btn) => {
+          const applianceMatch = btn.id.toLowerCase() === recipe.appliance.toLowerCase();
+          const ingredientMatch = recipe.ingredients.some((ing) => btn.id.toLowerCase() === ing.ingredient.toLowerCase());
+          const ustensilsMatch = recipe.ustensils.some((ustensil) => btn.id.toLowerCase() === ustensil.toLowerCase());
+          if (!applianceMatch && !ingredientMatch && !ustensilsMatch) {
+            isRecipeValid = false;
+            return;
+          }
+        });
+      }
+      return isRecipeValid;
   });
+  
 
   displayRecipes(filteredRecipes);
   displayFiltersMenu(filteredRecipes);

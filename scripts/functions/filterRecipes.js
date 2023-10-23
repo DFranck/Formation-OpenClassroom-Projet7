@@ -2,7 +2,8 @@ import { displayFiltersMenu } from "./displayFiltersMenus.js";
 import { displayRecipes } from "./displayRecipes.js";
 import { fetchRecipes } from "../api/fetchRecipes.js";
 
-// O(m + n * p) = O(nb de Btn + nb de recette * nb d'ingredients/ustensils)
+// O(m + n * p) Cette fonction se situe entre linéaire et quadratique.
+
 let recipes= []
 
 export async function filterRecipes() {

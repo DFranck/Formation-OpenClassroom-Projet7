@@ -18,7 +18,13 @@ export async function filterRecipes() {
   let ingredientsList = "";
   let ustensilsList = "";
   let filteredRecipes = recipes;
-
+  let j
+  let ingredients
+  let ustensils
+  let namesMatch
+  let descriptionsMatch
+  let ingredientMatch
+  let ingredientsMatch
   if (recipes.length === 0) {
     recipes = await fetchRecipes("../../data/recipes.js");
   }
@@ -28,7 +34,7 @@ export async function filterRecipes() {
       ingredientsList = recipes[i].ingredients;
       ustensilsList = recipes[i].ustensils;
       let matchCount = 0;
-      let j = 0;
+      j = 0;
       while (j < btnList.length) {
         if (appliances.includes(btnList[j].id.toLowerCase())) {
           matchCount++;
@@ -36,8 +42,8 @@ export async function filterRecipes() {
         j++;
       }
       for (let i = 0; i < ingredientsList.length; i++) {
-        const ingredients = ingredientsList[i].ingredient.toLowerCase();
-        let j = 0;
+        ingredients = ingredientsList[i].ingredient.toLowerCase();
+        j = 0;
         while (j < btnList.length) {
           if (ingredients.includes(btnList[j].id.toLowerCase())) {
             matchCount++;
@@ -46,8 +52,8 @@ export async function filterRecipes() {
         }
       }
       for (let i = 0; i < ustensilsList.length; i++) {
-        const ustensils = ustensilsList[i].toLowerCase();
-        let j = 0;
+        ustensils = ustensilsList[i].toLowerCase();
+        j = 0;
         while (j < btnList.length) {
           if (ustensils.includes(btnList[j].id.toLowerCase())) {
             matchCount++;
@@ -60,16 +66,16 @@ export async function filterRecipes() {
   }
   if (inputValue.length >= 3) {
     for (let i = 0; i < recipes.length; i++) {
-      const namesMatch = recipes[i].name
-        .toLowerCase()
-        .includes(inputValue.toLowerCase());
-      const descriptionsMatch = recipes[i].description
-        .toLowerCase()
-        .includes(inputValue.toLowerCase());
-      const ingredients = recipes[i].ingredients;
-      let ingredientsMatch = false;
-      for (let i = 0; i < ingredients.length; i++) {
-        const ingredientMatch = ingredients[i].ingredient
+      namesMatch = recipes[i].name
+      .toLowerCase()
+      .includes(inputValue.toLowerCase());
+      descriptionsMatch = recipes[i].description
+      .toLowerCase()
+      .includes(inputValue.toLowerCase());
+      ingredients = recipes[i].ingredients;
+      for (let j = 0; j < ingredients.length; j++) {
+        ingredientsMatch = false
+        ingredientMatch = ingredients[j].ingredient
           .toLowerCase()
           .includes(inputValue.toLowerCase());
         if (ingredientMatch) ingredientsMatch = true;
@@ -79,22 +85,12 @@ export async function filterRecipes() {
     }
   }
   if (filteredRecipesByBtn.length > 0 && filteredRecipesByInput.length > 0) {
-    console.log("both filter match");
-    filteredRecipes = [];
-    for (let i = 0; i < filteredRecipesByInput.length; i++) {
-      const isCommonRecipe = filteredRecipesByInput[i];
-      for (let j = 0; j < filteredRecipesByBtn.length; j++) {
-        if (isCommonRecipe === filteredRecipesByBtn[j]) {
-          filteredRecipes.push(isCommonRecipe);
-          break;
-        }
-      }
-    }
-  } else if (filteredRecipesByBtn.length > 0 && inputValue.length < 3) {
-    console.log("btn filter match");
+    filteredRecipes = filteredRecipesByBtn.filter((recipe) =>
+      filteredRecipesByInput.includes(recipe)
+    );
+  } else if (filteredRecipesByBtn.length > 0) {
     filteredRecipes = filteredRecipesByBtn;
   } else if (filteredRecipesByInput.length > 0) {
-    console.log("input filter match");
     filteredRecipes = filteredRecipesByInput;
   } else if (filteredRecipesByInput.length === 0 && inputValue.length > 2) {
     console.log("input filter no match");

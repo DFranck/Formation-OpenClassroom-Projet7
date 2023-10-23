@@ -18,13 +18,13 @@ export async function filterRecipes() {
   let ingredientsList = "";
   let ustensilsList = "";
   let filteredRecipes = recipes;
-  let j
-  let ingredients
-  let ustensils
-  let namesMatch
-  let descriptionsMatch
-  let ingredientMatch
-  let ingredientsMatch
+  let j;
+  let ingredients;
+  let ustensils;
+  let namesMatch;
+  let descriptionsMatch;
+  let ingredientMatch;
+  let ingredientsMatch;
   if (recipes.length === 0) {
     recipes = await fetchRecipes("../../data/recipes.js");
   }
@@ -67,14 +67,14 @@ export async function filterRecipes() {
   if (inputValue.length >= 3) {
     for (let i = 0; i < recipes.length; i++) {
       namesMatch = recipes[i].name
-      .toLowerCase()
-      .includes(inputValue.toLowerCase());
+        .toLowerCase()
+        .includes(inputValue.toLowerCase());
       descriptionsMatch = recipes[i].description
-      .toLowerCase()
-      .includes(inputValue.toLowerCase());
+        .toLowerCase()
+        .includes(inputValue.toLowerCase());
       ingredients = recipes[i].ingredients;
       for (let j = 0; j < ingredients.length; j++) {
-        ingredientsMatch = false
+        ingredientsMatch = false;
         ingredientMatch = ingredients[j].ingredient
           .toLowerCase()
           .includes(inputValue.toLowerCase());
@@ -85,18 +85,22 @@ export async function filterRecipes() {
     }
   }
   if (filteredRecipesByBtn.length > 0 && filteredRecipesByInput.length > 0) {
-    filteredRecipes = filteredRecipesByBtn.filter((recipe) =>
-      filteredRecipesByInput.includes(recipe)
-    );
-  } else if (filteredRecipesByBtn.length > 0) {
+    filteredRecipes = [];
+    for (let i = 0; i < filteredRecipesByBtn.length; i++) {
+      const recipe = filteredRecipesByBtn[i];
+      for (let j = 0; j < filteredRecipesByInput.length; j++) {
+        if (recipe === filteredRecipesByInput[j]) {
+          filteredRecipes.push(recipe);
+        }
+      }
+    }
+  } else if (filteredRecipesByBtn.length > 0 && inputValue.length < 2) {
     filteredRecipes = filteredRecipesByBtn;
   } else if (filteredRecipesByInput.length > 0) {
     filteredRecipes = filteredRecipesByInput;
   } else if (filteredRecipesByInput.length === 0 && inputValue.length > 2) {
-    console.log("input filter no match");
     filteredRecipes = [];
   } else {
-    console.log("no filter");
     filteredRecipes = recipes;
   }
   displayRecipes(filteredRecipes);

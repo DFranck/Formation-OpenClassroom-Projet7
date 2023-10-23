@@ -79,16 +79,28 @@ export async function filterRecipes() {
     }
   }
   if (filteredRecipesByBtn.length > 0 && filteredRecipesByInput.length > 0) {
-    filteredRecipes = filteredRecipesByBtn.filter((recipe) =>
-      filteredRecipesByInput.includes(recipe)
-    );
-  } else if (filteredRecipesByBtn.length > 0) {
+    console.log("both filter match");
+    filteredRecipes = [];
+    for (let i = 0; i < filteredRecipesByInput.length; i++) {
+      const isCommonRecipe = filteredRecipesByInput[i];
+      for (let j = 0; j < filteredRecipesByBtn.length; j++) {
+        if (isCommonRecipe === filteredRecipesByBtn[j]) {
+          filteredRecipes.push(isCommonRecipe);
+          break;
+        }
+      }
+    }
+  } else if (filteredRecipesByBtn.length > 0 && inputValue.length < 3) {
+    console.log("btn filter match");
     filteredRecipes = filteredRecipesByBtn;
   } else if (filteredRecipesByInput.length > 0) {
+    console.log("input filter match");
     filteredRecipes = filteredRecipesByInput;
   } else if (filteredRecipesByInput.length === 0 && inputValue.length > 2) {
+    console.log("input filter no match");
     filteredRecipes = [];
   } else {
+    console.log("no filter");
     filteredRecipes = recipes;
   }
   displayRecipes(filteredRecipes);

@@ -2,7 +2,8 @@ import { displayFiltersMenu } from "./displayFiltersMenus.js";
 import { displayRecipes } from "./displayRecipes.js";
 import { fetchRecipes } from "../api/fetchRecipes.js";
 
-//O(n * (m + p * m + d * m + 1 + p)) = O( recettes * (btn + btn * ingrédients + btn * ustensils + input + recette))
+//La complexité dominante ici est la fusion des listes filtrées, qui est quadratique (O(n²)). Même si les autres parties ont des complexités linéaires et linéaires multipliées par des constantes, la complexité totale est dominée par la partie quadratique. Donc, la complexité globale de la fonction est O(n²) dans le pire des cas.
+
 let recipes = [];
 
 export async function filterRecipes() {

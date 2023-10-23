@@ -12,11 +12,11 @@ Mise en place de deux implémentations différentes pour la recherche principale
 - [x] Valider le code avec le validateur W3C.
 - [x] Se concentrer uniquement sur le champ de recherche principal pour ces deux implémentations.
 - [x] Réaliser un schéma ou "algorigramme".
-- [ ] Implémenter les deux versions en utilisant deux branches différentes sur Git.
-- [ ] Respecter les bonnes pratiques du Green Code.
-- [ ] Prévenir les risques d’injection de balises HTML ou toute autre faille de sécurité.
-- [ ] Tester la performance des algorithmes sur Jsben.ch pour uniquement la recherche principale.
-- [ ] Terminer le document par la recommandation de l'algorithme à conserver.
+- [x] Implémenter les deux versions en utilisant deux branches différentes sur Git.
+- [x] Respecter les bonnes pratiques du Green Code.
+- [x] Prévenir les risques d’injection de balises HTML ou toute autre faille de sécurité.
+- [x] Tester la performance des algorithmes sur Jsben.ch pour uniquement la recherche principale.
+- [x] Terminer le document par la recommandation de l'algorithme à conserver.
 
 ## Développement
 
@@ -34,11 +34,21 @@ Mise en place de deux implémentations différentes pour la recherche principale
 
 3. **Optimisation et Sécurité** :
 
-   - [ ] Optimiser le temps de chargement des images et des scripts.
    - [x] Assurer la sécurité des données utilisateur.
-   - [ ] Vérifier la performance de la recherche avec un grand nombre de recettes.
+   - [x] Vérifier la performance de la recherche avec un grand nombre de recettes.
 
 4. **Documentation et Finalisation** :
    - [x] Compléter la documentation du code.
    - [x] Faire une revue de code.
    - [x] Tester le site sur différents appareils et navigateurs.
+
+## Ressources
+
+Constante : O(1)
+Logarithmique : O(log n)
+Linéaire : O(n)
+Linéaire Logarithmique : O(n log n)
+Quadratique : O(n²)
+Cubique : O(n3)
+Exponentielle : O(2n) ou O(bn)
+Factorielle : O(n!)

@@ -28,6 +28,7 @@
       </h2>
       <div id="searchBar">
         <input
+          id="searchBarInput"
           type="text"
           placeholder="Rechercher une recette, un ingrédient, ..."
         />
@@ -142,13 +143,10 @@
           </div>
           <h3 class="recipe-number">1500 recettes</h3>
         </div>
-        <div class="filter-selected">
-          <button>
-            Creme coco <img src="./assets/icons/black-cross.svg" alt="" />
-          </button>
-        </div>
+        <div class="filter-selected"></div>
       </section>
       <section class="recipes-gallery sr-only">
+        <h2 style="display: none">Recettes</h2>
         <ul class="recipes-list"></ul>
       </section>
     </main>

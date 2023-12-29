@@ -83,12 +83,6 @@
                 img{
                     opacity: 0;
                 }
-                :hover{
-                    background: set.$Yellow;
-                    img{
-                        opacity: 1;
-                    }
-                }
                 li{
                     z-index: 2;
                     display: flex;
@@ -99,6 +93,15 @@
                     cursor: pointer;
                     display: flex;
                     justify-content: space-between;
+                    &:hover{
+                        background: set.$Yellow; 
+                    }
+                    &.activeSearch {
+                        background: set.$Yellow; 
+                        img{
+                            opacity: 1;
+                        }
+                    }
                     }
                 }
             }
@@ -111,6 +114,9 @@
         }
     }
     .filter-selected{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
         button{
             background: set.$Yellow;
             height: 53px;
@@ -124,3 +130,4 @@
         }
     }
 }
+

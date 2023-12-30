@@ -1,7 +1,7 @@
 @use "../settings" as set;
 
 header {
-    background: url(/assets/img/header.png) center/cover;
+    background: url(../assets/img/header.png) center/cover;
     position: relative;
     height: 667px;
     @include set.FlexCenter;

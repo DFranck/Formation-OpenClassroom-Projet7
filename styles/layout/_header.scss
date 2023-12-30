@@ -1,67 +1,76 @@
 @use "../settings" as set;
 
-header{
-    background: url(../../assets/img/header.png) center/cover;
+header {
+    background: url(../assets/img/header.png) center/cover;
     position: relative;
     height: 667px;
     @include set.FlexCenter;
-        h1{
+
+    h1 {
+        position: absolute;
+        top: 51px;
+        left: 69px;
+    }
+
+    h2 {
+        color: set.$Yellow;
+        font-family: set.$Font1;
+        font-size: 44px;
+        font-weight: 400;
+        max-width: 890px;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    #searchBar {
+        position: relative;
+
+        input {
+            cursor: pointer;
+            width: 954px;
+            height: 72px;
+            border-radius: 11px;
+            font-size: 16px;
+            font-family: set.$Font2;
+            color: set.$Grey;
+            padding-left: 30px;
+            border: none;
+            outline: none;
+        }
+
+        #canceled-search {
             position: absolute;
-            top: 51px;
-            left: 69px;
+            background: none;
+            border: none;
+            right: 90px;
+            top: 30px;
+            opacity: 0;
         }
-        h2{
-            color: set.$Yellow;
-            font-family: set.$Font1;
-            font-size: 44px;
-            font-weight: 400;
-            max-width: 890px;
-            text-align: center;
-            margin-top: 60px;
-            margin-bottom: 30px;
-        }
-        #searchBar{
-            position: relative;
-            input{
-                cursor: pointer;
-                width: 954px;
-                height: 72px;
-                border-radius: 11px;
-                font-size: 16px;
-                font-family: set.$Font2;
-                color: set.$Grey;
-                padding-left: 30px;
-                border: none;
-                outline: none;
+
+        #loop-cta {
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+
+            &:hover {
+                #loop-cta-default {
+                    opacity: 0;
+                }
             }
-            #canceled-search{
+
+            #loop-cta-default {
                 position: absolute;
-                background: none;
-                border: none;
-                right: 90px;
-                top: 30px;
-                opacity: 0;
+                right: 0;
+                transition: .5s;
             }
-            #loop-cta{
-                cursor: pointer;
+
+            #loop-cta-hover {
                 position: absolute;
-                top: 10px;
-                right: 10px;
-                &:hover{
-                    #loop-cta-default{
-                        opacity: 0;
-                    }
-                }
-                #loop-cta-default{
-                    position: absolute;
-                    right: 0;
-                    transition: .5s;
-                }
-                #loop-cta-hover{
-                    position: absolute;
-                    right: 0;
-                }
+                right: 0;
             }
         }
-    
+    }
+
 }

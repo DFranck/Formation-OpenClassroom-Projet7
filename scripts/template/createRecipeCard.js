@@ -3,7 +3,8 @@ export function createRecipeCard(recipe) {
   const newRecipe = document.createElement("li");
   newRecipe.setAttribute("class", "recipe-container");
   const recipeImg = document.createElement("img");
-  const imgSRC = `../assets/img/${image}`;
+  const imgSRC = `./assets/img/${image}`;
+
   recipeImg.setAttribute("src", imgSRC);
   const recipeTime = document.createElement("span");
   recipeTime.textContent = time + "min";
